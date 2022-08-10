@@ -21,4 +21,15 @@
     5.找到第8行的servlet-class -> com.futurebytedacne.servlets.AddServlet
     6.用户发送的时post请求(method=post)，因此tomcat会执行AddServlet中的doPost方法
     -->
+
+    <servlet>
+        <servlet-name>ServletDemo01</servlet-name>
+        <servlet-class>com.futurebytedacne.servletcore.Demo01Servlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletDemo01</servlet-name>
+        <url-pattern>/demo01</url-pattern>
+    </servlet-mapping>
 </web-app>

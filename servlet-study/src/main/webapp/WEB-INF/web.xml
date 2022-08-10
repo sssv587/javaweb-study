@@ -32,4 +32,15 @@
         <servlet-name>ServletDemo01</servlet-name>
         <url-pattern>/demo01</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletDemo02</servlet-name>
+        <servlet-class>com.futurebytedacne.servletcore.Demo02Servlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletDemo02</servlet-name>
+        <url-pattern>/demo02</url-pattern>
+    </servlet-mapping>
 </web-app>

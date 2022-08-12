@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="servlet-study" />
         <module name="servlet" />
+        <module name="thymeleaf" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="servlet" target="1.8" />
       <module name="servlet-study" target="1.8" />
+      <module name="thymeleaf" target="1.8" />
       <module name="tomcat-study" target="8" />
     </bytecodeTargetLevel>
   </component>

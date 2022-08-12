@@ -65,4 +65,26 @@
         <servlet-name>ServletDemo04</servlet-name>
         <url-pattern>/demo04</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletDemo05</servlet-name>
+        <servlet-class>com.futurebytedacne.servletcore.Demo05Servlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletDemo05</servlet-name>
+        <url-pattern>/demo05</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletDemo06</servlet-name>
+        <servlet-class>com.futurebytedacne.servletcore.Demo06Servlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletDemo06</servlet-name>
+        <url-pattern>/demo06</url-pattern>
+    </servlet-mapping>
 </web-app>

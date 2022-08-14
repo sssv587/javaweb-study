@@ -7,12 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="servlet-study" />
+        <module name="project-thymeleaf" />
         <module name="thymeleaf" />
         <module name="servlet" />
-        <module name="thymeleaf-project" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="project-thymeleaf" target="1.8" />
       <module name="servlet" target="1.8" />
       <module name="servlet-study" target="1.8" />
       <module name="thymeleaf" target="1.8" />

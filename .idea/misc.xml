@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/project-thymeleaf" />
     <file type="web" url="file://$PROJECT_DIR$/servlet-study" />
     <file type="web" url="file://$PROJECT_DIR$/sevlet" />
     <file type="web" url="file://$PROJECT_DIR$/thymeleaf" />
@@ -13,7 +14,7 @@
         <option value="$PROJECT_DIR$/sevlet/pom.xml" />
         <option value="$PROJECT_DIR$/servlet-study/pom.xml" />
         <option value="$PROJECT_DIR$/thymeleaf/pom.xml" />
-        <option value="$PROJECT_DIR$/thymeleaf-project/pom.xml" />
+        <option value="$PROJECT_DIR$/project-thymeleaf/pom.xml" />
       </list>
     </option>
   </component>

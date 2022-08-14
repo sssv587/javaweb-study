@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/servlet-study" />
     <file type="web" url="file://$PROJECT_DIR$/sevlet" />
     <file type="web" url="file://$PROJECT_DIR$/thymeleaf" />
+    <file type="web" url="file://$PROJECT_DIR$/thymeleaf-project" />
     <file type="web" url="file://$PROJECT_DIR$/tomcat-study" />
   </component>
   <component name="MavenProjectsManager">
@@ -12,6 +13,7 @@
         <option value="$PROJECT_DIR$/sevlet/pom.xml" />
         <option value="$PROJECT_DIR$/servlet-study/pom.xml" />
         <option value="$PROJECT_DIR$/thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/thymeleaf-project/pom.xml" />
       </list>
     </option>
   </component>

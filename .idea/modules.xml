@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/sevlet/servlet.iml" filepath="$PROJECT_DIR$/sevlet/servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet-study/servlet-study.iml" filepath="$PROJECT_DIR$/servlet-study/servlet-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/thymeleaf/thymeleaf.iml" filepath="$PROJECT_DIR$/thymeleaf/thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thymeleaf-project/thymeleaf-project.iml" filepath="$PROJECT_DIR$/thymeleaf-project/thymeleaf-project.iml" />
     </modules>
   </component>
 </project>

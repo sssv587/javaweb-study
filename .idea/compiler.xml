@@ -17,8 +17,9 @@
       <module name="servlet" target="1.8" />
       <module name="servlet-study" target="1.8" />
       <module name="thymeleaf" target="1.8" />
-      <module name="thymeleaf-project" target="1.8" />
-      <module name="tomcat-study" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
   </component>
 </project>

@@ -7,19 +7,30 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="servlet-study" />
+        <module name="qqzone" />
         <module name="project-thymeleaf" />
         <module name="thymeleaf" />
+        <module name="servlet-study2" />
         <module name="servlet" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="project-thymeleaf" target="1.8" />
+      <module name="qqzone" target="1.8" />
       <module name="servlet" target="1.8" />
       <module name="servlet-study" target="1.8" />
+      <module name="servlet-study2" target="1.8" />
       <module name="thymeleaf" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="project-thymeleaf" options="" />
+      <module name="qqzone" options="" />
+      <module name="servlet-study" options="" />
+      <module name="servlet-study2" options="" />
+      <module name="thymeleaf" options="" />
+    </option>
   </component>
 </project>

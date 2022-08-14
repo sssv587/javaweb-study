@@ -6,8 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/html/html.iml" filepath="$PROJECT_DIR$/html/html.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaweb-study.iml" filepath="$PROJECT_DIR$/javaweb-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/project-thymeleaf/project-thymeleaf.iml" filepath="$PROJECT_DIR$/project-thymeleaf/project-thymeleaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qqzone/qqzone.iml" filepath="$PROJECT_DIR$/qqzone/qqzone.iml" />
       <module fileurl="file://$PROJECT_DIR$/sevlet/servlet.iml" filepath="$PROJECT_DIR$/sevlet/servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet-study/servlet-study.iml" filepath="$PROJECT_DIR$/servlet-study/servlet-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/servlet-study2/servlet-study2.iml" filepath="$PROJECT_DIR$/servlet-study2/servlet-study2.iml" />
       <module fileurl="file://$PROJECT_DIR$/thymeleaf/thymeleaf.iml" filepath="$PROJECT_DIR$/thymeleaf/thymeleaf.iml" />
     </modules>
   </component>

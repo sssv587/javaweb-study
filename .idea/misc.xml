@@ -2,7 +2,9 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/project-thymeleaf" />
+    <file type="web" url="file://$PROJECT_DIR$/qqzone" />
     <file type="web" url="file://$PROJECT_DIR$/servlet-study" />
+    <file type="web" url="file://$PROJECT_DIR$/servlet-study2" />
     <file type="web" url="file://$PROJECT_DIR$/sevlet" />
     <file type="web" url="file://$PROJECT_DIR$/thymeleaf" />
     <file type="web" url="file://$PROJECT_DIR$/thymeleaf-project" />
@@ -15,6 +17,8 @@
         <option value="$PROJECT_DIR$/servlet-study/pom.xml" />
         <option value="$PROJECT_DIR$/thymeleaf/pom.xml" />
         <option value="$PROJECT_DIR$/project-thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/qqzone/pom.xml" />
+        <option value="$PROJECT_DIR$/servlet-study2/pom.xml" />
       </list>
     </option>
   </component>

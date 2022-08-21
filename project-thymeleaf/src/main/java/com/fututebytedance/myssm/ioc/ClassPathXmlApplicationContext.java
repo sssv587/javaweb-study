@@ -16,10 +16,10 @@ import java.util.Map;
 public class ClassPathXmlApplicationContext implements BeanFactory {
 
     private Map<String, Object> beanMap = new HashMap<>();
-    private final String path = "C:\\Users\\10926\\IdeaProjects\\javaweb-study\\project-thymeleaf\\src\\main\\resources\\applicationContext.xml";
+    private final String path = "com/applicationContext.xml";
 
     public ClassPathXmlApplicationContext() {
-        this("applicationContext.xml");
+        this("com/applicationContext.xml");
     }
 
     public ClassPathXmlApplicationContext(String path) {

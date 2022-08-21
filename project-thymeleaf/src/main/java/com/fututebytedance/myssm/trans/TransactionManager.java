@@ -1,12 +1,12 @@
 package com.fututebytedance.myssm.trans;
 
-
 import com.fututebytedance.myssm.basedao.ConnUtil;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 
 public class TransactionManager {
+
     //开启事务
     public static void beginTrans() throws SQLException {
         ConnUtil.getConn().setAutoCommit(false);

@@ -1,6 +1,5 @@
 package com.fututebytedance.myssm.filters;
 
-
 import com.fututebytedance.myssm.util.StringUtil;
 
 import javax.servlet.*;

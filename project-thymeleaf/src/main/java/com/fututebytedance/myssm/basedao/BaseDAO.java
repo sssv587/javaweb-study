@@ -25,11 +25,14 @@ public abstract class BaseDAO<T> {
         Type[] actualTypeArguments = ((ParameterizedType) genericType).getActualTypeArguments();
         //获取到的<T>中的T的真实的类型
         Type actualType = actualTypeArguments[0];
+
         try {
             entityClass = Class.forName(actualType.getTypeName());
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+            throw new DAOException("BaseDAO 构造方法出错了，可能的原因是没有指定<>中的类型");
         }
+
     }
 
     protected Connection getConn() {
@@ -53,8 +56,9 @@ public abstract class BaseDAO<T> {
     protected int executeUpdate(String sql, Object... params) {
         boolean insertFlag = false;
         insertFlag = sql.trim().toUpperCase().startsWith("INSERT");
+
+        conn = getConn();
         try {
-            conn = getConn();
             if (insertFlag) {
                 psmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             } else {
@@ -69,35 +73,30 @@ public abstract class BaseDAO<T> {
                     return ((Long) rs.getLong(1)).intValue();
                 }
             }
-
-            return count;
+            return 0;
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            close(rs, psmt, conn);
+            throw new DAOException("BaseDAO executeUpdate出错了");
         }
-        return 0;
     }
 
     //通过反射技术给obj对象的property属性赋propertyValue值
-    private void setValue(Object obj, String property, Object propertyValue) {
+    private void setValue(Object obj, String property, Object propertyValue) throws NoSuchFieldException, IllegalAccessException {
         Class clazz = obj.getClass();
-        try {
-            //获取property这个字符串对应的属性名 ， 比如 "fid"  去找 obj对象中的 fid 属性
-            Field field = clazz.getDeclaredField(property);
-            if (field != null) {
-                field.setAccessible(true);
-                field.set(obj, propertyValue);
-            }
-        } catch (NoSuchFieldException | IllegalAccessException e) {
-            e.printStackTrace();
+
+        //获取property这个字符串对应的属性名 ， 比如 "fid"  去找 obj对象中的 fid 属性
+        Field field = clazz.getDeclaredField(property);
+        if (field != null) {
+            field.setAccessible(true);
+            field.set(obj, propertyValue);
         }
+
     }
 
     //执行复杂查询，返回例如统计结果
     protected Object[] executeComplexQuery(String sql, Object... params) {
+        conn = getConn();
         try {
-            conn = getConn();
             psmt = conn.prepareStatement(sql);
             setParams(psmt, params);
             rs = psmt.executeQuery();
@@ -119,16 +118,16 @@ public abstract class BaseDAO<T> {
             }
         } catch (SQLException e) {
             e.printStackTrace();
-        } finally {
-            close(rs, psmt, conn);
+            throw new DAOException("BaseDAO executeComplexQuery出错了");
         }
+
         return null;
     }
 
     //执行查询，返回单个实体对象
     protected T load(String sql, Object... params) {
+        conn = getConn();
         try {
-            conn = getConn();
             psmt = conn.prepareStatement(sql);
             setParams(psmt, params);
             rs = psmt.executeQuery();
@@ -150,24 +149,19 @@ public abstract class BaseDAO<T> {
                 }
                 return entity;
             }
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } finally {
-            close(rs, psmt, conn);
+            throw new DAOException("BaseDAO load出错了");
         }
+
         return null;
     }
-
 
     //执行查询，返回List
     protected List<T> executeQuery(String sql, Object... params) {
         List<T> list = new ArrayList<>();
+        conn = getConn();
         try {
-            conn = getConn();
             psmt = conn.prepareStatement(sql);
             setParams(psmt, params);
             rs = psmt.executeQuery();
@@ -189,14 +183,9 @@ public abstract class BaseDAO<T> {
                 }
                 list.add(entity);
             }
-        } catch (SQLException e) {
+        } catch (Exception e) {
             e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } finally {
-            close(rs, psmt, conn);
+            throw new DAOException("BaseDAO executeQuery出错了");
         }
         return list;
     }

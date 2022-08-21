@@ -25,4 +25,15 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
+
+<!--    &lt;!&ndash;XML配置Filter&ndash;&gt;-->
+    <!--    <filter>-->
+    <!--        <filter-name>Demo02Filter</filter-name>-->
+    <!--        <filter-class>com.futurebytedance.filter.Demo02Filter</filter-class>-->
+    <!--    </filter>-->
+    <!--    -->
+    <!--    <filter-mapping>-->
+    <!--        <filter-name>Demo02Filter</filter-name>-->
+    <!--        <url-pattern>/demo02.do</url-pattern>-->
+    <!--    </filter-mapping>-->
 </web-app>

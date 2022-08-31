@@ -2,25 +2,19 @@ package com.futurebytedance.qqzone.pojo;
 
 import java.util.List;
 
-/**
- * @author yuhang.sun
- * @version 1.0
- * @date 2022/8/31 - 0:33
- * @Description
- */
 public class UserBasic {
-    private Integer id;
-    private String loginId;
-    private String nickName;
-    private String pwd;
-    private String headImg;
+    private Integer id ;
+    private String loginId ;
+    private String nickName ;
+    private String pwd ;
+    private String headImg ;
 
-    private UserDetail userDetail;     //1:1
-    private List<Topic> topicList;     //1:N
-    private List<UserBasic> friendList;//M:N
+    private UserDetail userDetail ;     //1:1
+    private List<Topic> topicList ;     //1:N
+    private List<UserBasic> friendList ;//M:N
 
-    public UserBasic() {
-    }
+
+    public UserBasic(){}
 
     public UserBasic(Integer id) {
         this.id = id;

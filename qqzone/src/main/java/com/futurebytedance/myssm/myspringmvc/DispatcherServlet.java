@@ -1,7 +1,7 @@
 package com.futurebytedance.myssm.myspringmvc;
 
-import com.atguigu.myssm.ioc.BeanFactory;
-import com.atguigu.myssm.util.StringUtil;
+import com.futurebytedance.myssm.ioc.BeanFactory;
+import com.futurebytedance.myssm.util.StringUtil;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

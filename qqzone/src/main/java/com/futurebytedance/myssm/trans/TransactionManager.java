@@ -1,6 +1,7 @@
 package com.futurebytedance.myssm.trans;
 
-import com.atguigu.myssm.basedao.ConnUtil;
+
+import com.futurebytedance.myssm.basedao.ConnUtil;
 
 import java.sql.Connection;
 import java.sql.SQLException;
